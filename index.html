@@ -2,18 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Guide du Distributeur Automatique</title>
+  <title>Distributeur Automatique de Nourriture</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
 
     header {
-      background-color: #3e8e41;
+      background-color: #4CAF50;
       color: white;
       padding: 20px;
       text-align: center;
@@ -21,80 +20,58 @@
 
     main {
       padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
     }
 
-    h1, h2 {
-      color: #3e8e41;
+    section {
+      margin-bottom: 20px;
     }
 
-    ul, ol {
-      margin-left: 20px;
+    h2 {
+      color: #4CAF50;
     }
 
     footer {
+      background-color: #ddd;
       text-align: center;
       padding: 10px;
-      background-color: #eee;
-      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Distributeur Automatique de Nourriture pour Animaux</h1>
-    <p>Un projet automatisé avec Arduino</p>
+    <h1>Projet : Distributeur Automatique de Nourriture</h1>
   </header>
 
   <main>
     <section>
-      <h2>🔎 Description du projet</h2>
+      <h2>Description</h2>
       <p>
-        Ce projet consiste à créer un distributeur automatique qui libère une portion de nourriture pour animaux à des heures précises, en utilisant une carte Arduino, un moteur servo, et une horloge RTC. Il est idéal pour nourrir des chats ou des chiens pendant l'absence du propriétaire.
+        Ce projet utilise une carte Arduino pour distribuer automatiquement de la nourriture aux animaux à des heures régulières.
       </p>
     </section>
 
     <section>
-      <h2>📦 Matériel nécessaire</h2>
+      <h2>Composants utilisés</h2>
       <ul>
         <li>Carte Arduino UNO</li>
-        <li>Module RTC (DS3231)</li>
-        <li>Servo moteur</li>
-        <li>Écran LCD (par exemple 16x2 avec I2C)</li>
-        <li>Breadboard + câbles</li>
+        <li>Servo-moteur</li>
+        <li>Horloge RTC</li>
         <li>Récipient pour la nourriture</li>
-        <li>Alimentation (batterie ou câble USB)</li>
+        <li>Alimentation</li>
       </ul>
     </section>
 
     <section>
-      <h2>⚙ Fonctionnement</h2>
+      <h2>Fonctionnement</h2>
       <p>
-        L’horloge envoie l’heure actuelle à la carte Arduino. Quand l’heure programmée arrive (par exemple 8h00 du matin), l’Arduino commande le servo-moteur pour ouvrir brièvement la trappe de nourriture, puis referme. Le processus peut se répéter plusieurs fois par jour. L’écran LCD affiche l’heure actuelle et le statut de distribution.
+        L'horloge envoie l'heure à l'Arduino, qui active le moteur pour ouvrir le récipient et libérer une portion de nourriture.
       </p>
     </section>
-
-    <section>
-      <h2>📋 Étapes de réalisation</h2>
-      <ol>
-        <li>Définir le besoin (automatiser la distribution de nourriture).</li>
-        <li>Préparer les composants et le matériel.</li>
-        <li>Concevoir en 3D le boîtier, la trappe et la structure du distributeur (par exemple avec Tinkercad ou FreeCAD) et, si possible, imprimer ou simuler les pièces.</li>
-        <li>Assembler le circuit électronique sur une breadboard.</li>
-        <li>Connecter l’écran LCD à l’Arduino (en utilisant un module I2C si disponible).</li>
-        <li>Connecter le moteur servo à la trappe du récipient.</li>
-        <li>Programmer la carte Arduino avec le bon code pour gérer l’heure, le servo et l’affichage LCD.</li>
-        <li>Tester le système à différentes heures pour vérifier la distribution.</li>
-        <li>Intégrer l’électronique dans la structure 3D finale et fixer le récipient à nourriture.</li>
-      </ol>
-    </section>
   </main>
-
+<button><a href="../style/index.html">voir plus</a></button>
   <footer>
-    Projet scolaire réalisé par [Ton Nom] - 2025
+    Projet réalisé par amine et idriss- Année 2025
   </footer>
 
 </body>
